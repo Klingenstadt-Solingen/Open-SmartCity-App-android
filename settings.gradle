@@ -1,0 +1,26 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "OSCACore"
+include ':app'
+include ':oscacontact-android'
+include ':oscacoworking-android'
+include ':oscadistrict-android'
+include ':oscadefect-android'
+include ':oscaenvironment-android'
+include ':oscaessentials-android'
+include ':oscaevents-android'
+include ':oscajobs-android'
+include ':oscamap-android'
+include ':oscamobilitymonitor-android'
+include ':oscanetworkservice-android'
+include ':oscapressreleases-android'
+include ':oscapublictransport-android'
+include ':oscasgart-android'
+include ':oscawaste-android'
+include ':oscaweather-android'

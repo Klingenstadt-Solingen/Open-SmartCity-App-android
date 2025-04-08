@@ -1,0 +1,62 @@
+[submodule "oscacontact-android"]
+	path = oscacontact-android
+	url = ../modules/oscacontact-android.git
+	branch = develop
+[submodule "oscacoworking-android"]
+	path = oscacoworking-android
+	url = ../modules/oscacoworking-android.git
+	branch = develop
+[submodule "oscadefect-android"]
+	path = oscadefect-android
+	url = ../modules/oscadefect-android.git
+	branch = develop
+[submodule "oscaessentials-android"]
+	path = oscaessentials-android
+	url = ../modules/oscaessentials-android.git
+	branch = develop
+[submodule "oscaevents-android"]
+	path = oscaevents-android
+	url = ../modules/oscaevents-android.git
+	branch = develop
+[submodule "oscajobs-android"]
+	path = oscajobs-android
+	url = ../modules/oscajobs-android.git
+	branch = develop
+[submodule "oscamap-android"]
+	path = oscamap-android
+	url = ../modules/oscamap-android.git
+	branch = develop
+[submodule "oscamobilitymonitor-android"]
+	path = oscamobilitymonitor-android
+	url = ../modules/oscamobilitymonitor-android.git
+	branch = develop
+[submodule "oscanetworkservice-android"]
+	path = oscanetworkservice-android
+	url = ../modules/oscanetworkservice-android.git
+	branch = develop
+[submodule "oscapressreleases-android"]
+	path = oscapressreleases-android
+	url = ../modules/oscapressreleases-android.git
+	branch = develop
+[submodule "oscapublictransport-android"]
+	path = oscapublictransport-android
+	url = ../modules/oscapublictransport-android.git
+	branch = develop
+[submodule "oscasgart-android"]
+	path = oscasgart-android
+	url = ../modules/oscasgart-android.git
+	branch = develop
+[submodule "oscawaste-android"]
+	path = oscawaste-android
+	url = ../modules/oscawaste-android.git
+	branch = develop
+[submodule "oscaweather-android"]
+	path = oscaweather-android
+	url = ../modules/oscaweather-android.git
+	branch = develop
+[submodule "oscaenvironment-android"]
+	path = oscaenvironment-android
+	url = ../modules/oscaenvironment-android.git
+[submodule "oscadistrict-android"]
+	path = oscadistrict-android
+	url = ../modules/oscadistrict-android.git

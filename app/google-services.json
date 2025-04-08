@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "741135666648",
+    "project_id": "solingenapp-d8cb2",
+    "storage_bucket": "solingenapp-d8cb2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741135666648:android:98e519a14913d24d00f6ad",
+        "android_client_info": {
+          "package_name": "de.solingen.solingenapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm-ZYHE3JjHjIKZufx1oVPgIrcW-4jVNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

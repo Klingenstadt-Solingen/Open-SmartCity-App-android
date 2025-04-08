@@ -1,0 +1,245 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id "com.google.protobuf"
+    id 'shot'
+    id 'org.jetbrains.dokka'
+    id "com.google.gms.google-services"
+    id 'com.google.dagger.hilt.android'
+
+    id 'io.sentry.android.gradle' version '4.11.0'
+    id 'org.jetbrains.kotlin.plugin.compose'
+}
+
+android {
+    def cityName = "solingen"
+    defaultConfig {
+        applicationId "de.solingen.solingenapp"
+        minSdk 26
+        compileSdk 35
+        targetSdk 35
+        versionCode 202504070
+        versionName version_core
+
+        buildConfigField "int", "TARGET_SDK_VERSION", "$targetSdk"
+        buildConfigField "int", "MIN_SDK_VERSION", "$minSdk"
+        buildConfigField "int", "COMPILE_SDK_VERSION", "$compileSdk"
+
+        buildConfigField "String", "PARSE_URL", "\"$env.PARSE_URL.value\""
+        buildConfigField "String", "PARSE_CLIENT_KEY", "\"$env.PARSE_CLIENT_KEY.value\""
+        buildConfigField "String", "PARSE_APP_ID", "\"$env.PARSE_APP_ID.value\""
+
+        buildConfigField "String", "MATOMO_URL", "\"$env.MATOMO_URL.value\""
+        buildConfigField "String", "MATOMO_ENABLED", "\"$env.MATOMO_ENABLED.value\""
+        buildConfigField "String", "MATOMO_SITE_ID", "\"$env.MATOMO_SITE_ID.value\""
+
+        buildConfigField "String", "SENTRY_ENABLED", "\"$env.SENTRY_ENABLED.value\""
+        buildConfigField "String", "SENTRY_DSN", "\"$env.SENTRY_DSN.value\""
+
+        buildConfigField "String", "POLITICS_URL", "\"$env.POLITICS_URL.value\""
+
+        proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+        vectorDrawables.useSupportLibrary true
+
+        manifestPlaceholders = [usesCleartextTraffic: "true", "cityName": cityName]
+    }
+
+    buildFeatures.buildConfig true
+
+    buildTypes {
+        // Debug is the default development build type.
+        debug {
+            versionNameSuffix '-DEBUG'
+            minifyEnabled false
+            shrinkResources false
+            debuggable true
+        }
+
+        // Release build this is only for production and not debuggable.
+        release {
+            manifestPlaceholders.put("usesCleartextTraffic", "false")
+            ndk.debugSymbolLevel "FULL"
+            minifyEnabled true
+            shrinkResources true
+            debuggable false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+        kotlin {
+            kotlinOptions {
+                freeCompilerArgs += "-opt-in=kotlin.RequiresOptIn"
+            }
+        }
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+        freeCompilerArgs += [
+                "-Xopt-in=kotlin.time.ExperimentalTime",
+                "-opt-in=kotlin.RequiresOptIn",
+        ]
+    }
+    buildFeatures {
+        compose true
+    }
+
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    namespace "de.osca.android.core.$cityName"
+}
+
+dependencies {
+    implementation project(":oscacontact-android")
+    implementation project(":oscacoworking-android")
+    implementation project(":oscadistrict-android")
+    implementation project(":oscadefect-android")
+    implementation project(":oscaenvironment-android")
+    implementation project(":oscaessentials-android")
+    implementation project(":oscaevents-android")
+    implementation project(":oscajobs-android")
+    implementation project(":oscamap-android")
+    implementation project(":oscamobilitymonitor-android")
+    implementation project(":oscanetworkservice-android")
+    implementation project(":oscapressreleases-android")
+    implementation project(":oscapublictransport-android")
+    implementation project(":oscasgart-android")
+    implementation project(":oscawaste-android")
+    implementation project(":oscaweather-android")
+
+
+    implementation("androidx.webkit:webkit:1.13.0")
+    implementation 'androidx.core:core-ktx:1.15.0'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+
+    implementation "androidx.compose.ui:ui:$compose_version"
+    implementation "androidx.compose.material:material:$compose_version"
+    implementation "androidx.compose.ui:ui-tooling:$compose_version"
+    implementation "androidx.compose.material:material-icons-extended:$compose_version"
+    implementation "androidx.compose.animation:animation:$compose_version"
+    implementation "androidx.compose.foundation:foundation:$compose_version"
+    implementation "androidx.compose.foundation:foundation-layout:$compose_version"
+    implementation "androidx.compose.material:material-icons-extended:$compose_version"
+    implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
+
+    implementation("androidx.navigation:navigation-compose:$compose_navigation_version")
+
+    implementation 'androidx.activity:activity-compose:1.10.1'
+    implementation("androidx.fragment:fragment-ktx:1.8.6")
+    implementation 'androidx.core:core-splashscreen:1.0.1'
+
+    // Accompanist
+    implementation "com.google.accompanist:accompanist-systemuicontroller:$accompanist_version"
+    implementation "com.google.accompanist:accompanist-insets-ui:$accompanist_version"
+    implementation "com.google.accompanist:accompanist-flowlayout:$accompanist_version"
+
+    implementation("com.google.accompanist:accompanist-permissions:0.37.2")
+
+    // Compose Dialogs
+    implementation "io.github.vanpra.compose-material-dialogs:core:$material_dialog_version"
+    implementation "io.github.vanpra.compose-material-dialogs:datetime:$material_dialog_version"
+
+    // Images
+    implementation("io.coil-kt:coil-compose:2.6.0")
+
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation 'com.squareup.retrofit2:converter-gson:2.10.0'
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp3_version"
+
+    // Testing
+    testImplementation("com.squareup.okhttp3:mockwebserver:$okhttp3_version")
+    implementation "co.infinum:retromock:1.1.1"
+    androidTestImplementation "androidx.arch.core:core-testing:2.2.0"
+    androidTestImplementation('androidx.test.espresso:espresso-contrib:3.6.1') {
+        exclude module: "protobuf-lite"
+    }
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.6.1"
+
+    // Compose testing dependencies
+    androidTestImplementation "androidx.compose.ui:ui-test:$compose_version"
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
+    debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
+
+    // Jetpack DataStore / Proto DataStore
+    implementation "androidx.datastore:datastore:1.1.3"
+    implementation "com.google.protobuf:protobuf-javalite:4.26.0"
+
+    // Shot
+    shotDependencies "com.karumi:shot-android:6.1.0"
+
+    // Compose Hilt / DI
+    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+    testImplementation("com.google.dagger:hilt-android-testing:$hilt_version")
+    kaptTest("com.google.dagger:hilt-android-compiler:$hilt_version")
+    androidTestImplementation("com.google.dagger:hilt-android-testing:$hilt_version")
+    kaptAndroidTest("com.google.dagger:hilt-android-compiler:$hilt_version")
+
+    // Google Maps
+    implementation("com.google.android.gms:play-services-location:21.3.0")
+
+    implementation "com.google.maps.android:maps-compose:5.0.3"
+    implementation "com.google.android.gms:play-services-maps:19.1.0"
+
+    // DataStore Preferences
+    implementation("androidx.datastore:datastore-preferences:1.1.3")
+
+    // Date / Time
+    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.0-RC.2")
+
+    // MPAndroidChart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    // Parse
+    implementation "com.github.parse-community.Parse-SDK-Android:parse:$parse_version"
+    implementation "com.github.parse-community.Parse-SDK-Android:ktx:$parse_version"
+
+    // Firebase / FCM
+    implementation 'com.google.gms:google-services:4.4.2'
+    implementation platform('com.google.firebase:firebase-bom:33.10.0')
+    implementation 'com.google.firebase:firebase-messaging'
+
+    // Android Beacon Library
+    implementation("org.altbeacon:android-beacon-library:2.20.5")
+
+    // Kotlin reflection
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+
+    // MATOMO
+    implementation 'com.github.matomo-org:matomo-sdk-android:4.2'
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+
+sentry {
+    autoUpload = env.SENTRY_ENABLED.value == "true"
+    org = "open-smart-city"
+    projectName = "android"
+    authToken = env.SENTRY_AUTH_TOKEN.value
+    // this will upload your source code to Sentry to show it as part of the stack traces
+    // disable if you don't want to expose your sources
+    includeSourceContext = true
+    includeProguardMapping = true
+    autoUploadProguardMapping = true
+    autoUploadNativeSymbols = true
+    includeDependenciesReport = true
+    telemetry = false
+}

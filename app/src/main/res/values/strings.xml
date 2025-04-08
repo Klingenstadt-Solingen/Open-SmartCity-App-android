@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_status_message" translatable="false">"Widgets sind "</string>
+
+    <!-- CORE_APP RELATED STRINGS -->
+    <string name="app_name" translatable="false">Solingen</string>
+    <string name="city_name" translatable="false">Solingen</string>
+    <string name="app_defect_provider" translatable="false">de.solingen.solingenapp.provider</string>
+    <string name="maps_key" translatable="false">AIzaSyCD4o1wm7dLhCcDGZUzwhn1EIryuxr3ONI</string>
+
+    <!-- WASTE NOTIFICATION CHANNEL -->
+    <string name="notification_waste_channel_channelId" translatable="false">0</string>
+    <string name="notification_waste_channel_channelName">Abfall</string>
+    <string name="notification_waste_channel_channelDescription">Benachrichtigung für Abholtermine</string>
+
+    <!-- NAVBAR RELATED STRINGS -->
+    <string name="navbar_townhall">Rathaus</string>
+    <string name="navbar_services">Services</string>
+    <string name="navbar_settings">Einstellungen</string>
+    <string name="navbar_dashboard">Stadt</string>
+
+    <!-- DASHBOARD RELATED STRINGS -->
+    <string name="dashboard_header_text">Klingenstadt Solingen</string>
+    <string name="dashboard_townhall">Digitales Rathaus</string>
+    <string name="dashboard_weather_in_city">"Wetter in "</string>
+    <string name="dashboard_service">Services</string>
+
+    <!-- SETTINGS RELATED STRINGS -->
+    <string name="settings_title">Einstellungen</string>
+    <string name="settings_title_weather">Wetter</string>
+    <string name="settings_title_notifications">Benachrichtigungen</string>
+    <string name="settings_title_legal">Rechtliches</string>
+    <string name="settings_weather_mystations">Meine Wetterstationen</string>
+    <string name="settings_waste_myaddress">Meine Adresse</string>
+    <string name="settings_notification_construction">Baustellen</string>
+    <string name="settings_notification_pressnews">Pressemitteilungen</string>
+    <string name="settings_notification_waste">Abfall Abholtermine</string>
+    <string name="settings_show_waste_dashboard">In Dashboard anzeigen</string>
+    <string name="settings_notification_coronainfo">Corona Informationen</string>
+    <string name="settings_legal_dataprivacy">Datenschutz</string>
+    <string name="settings_legal_imprint">Impressum</string>
+
+    <!-- IMPRINT RELATED STRINGS -->
+    <string name="imprint_title">Impressum</string>
+    <string name="imprint_title_publisher">Herausgeber</string>
+    <string name="imprint_title_legal">Haftungshinweis</string>
+    <string name="imprint_title_post_address">Postanschrift</string>
+    <string name="imprint_title_central_phonenumbers">Zentrale Rufnummern</string>
+    <string name="imprint_title_central_mail_addresses">Zentrale E-Mail-Anschriften</string>
+    <string name="imprint_title_address">Anschrift</string>
+    <string name="imprint_title_implementation">Umsetzung</string>
+    <string name="imprint_legal">Die Stadt Solingen und die Technischen Betriebe Solingen übernehmen
+        keinerlei Gewähr für die Aktualität, Korrektheit, Vollständigkeit oder Qualität der
+        bereitgestellten Informationen. Haftungsansprüche gegen die Stadt Solingen, welche sich auf
+        Schäden materieller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen
+        Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht
+        wurden, sind grundsätzlich ausgeschlossen, sofern seitens der Stadt Solingen kein vorsätzliches
+        oder grob fahrlässiges Verschulden vorliegt. Dies gilt auch für Schäden aus der Verletzung
+        des Lebens, des Körpers oder der Gesundheit unter der Einschränkung, dass bereits fahrlässiges
+        Verschulden seitens der Stadt nicht von dem Haftungsausschluss erfasst ist.
+    </string>
+
+    <string name="dataprivacy_title">Datenschutz</string>
+    <string name="weatherstation_title">Wetterstationen</string>
+    <string name="weather_title">Wetter</string>
+    <string name="services_title">Services</string>
+    <string name="townhall_title">Rathaus</string>
+    <string name="placeholder_widget_title">Widget Name</string>
+    <string name="placeholder_module_title">Module Name</string>
+
+    <!-- ON_BOARDING RELATED STRINGS -->
+    <string name="onBoarding_title">OnBoarding</string>
+    <string name="onBoarding_next_notification_grant">Nachrichten erlauben</string>
+    <string name="onBoarding_next_notification_active">Nachrichten aktiviert</string>
+    <string name="onBoarding_next_settings">Einstellungen</string>
+    <string name="onBoarding_next_button">weiter</string>
+    <string name="onBoarding_back_button">zurück</string>
+    <string name="onBoarding_skip_button">überspringen</string>
+    <string name="onBoarding_location_grant">Standort freigeben</string>
+    <string name="onBoarding_location_active">Standort freigegeben</string>
+    <string name="onBoarding_start_button">Los gehts</string>
+    <string name="onBoarding_screen_one_element_0">Klingenstadt</string>
+    <string name="onBoarding_screen_one_element_1">Vielen Dank, dass du diese App heruntergeladen hast.</string>
+    <string name="onBoarding_screen_one_element_2">Bevor du die App nutzen kannst, haben wir noch kurz
+        etwas zu besprechen.
+    </string>
+    <string name="onBoarding_screen_two_element_0">Datenschutz</string>
+    <string name="onBoarding_screen_two_element_1">Wir möchten, dass du weißt, dass deine Daten bei
+        uns sicher sind.
+    </string>
+    <string name="onBoarding_screen_two_element_2">Du kannst dir auf der nächsten Seite unsere
+        Datenschutzerklärung durchlesen. Mit der Nutzung dieser App stimmst du unserer
+        Datenschutzerklärung zu.
+    </string>
+    <string name="onBoarding_screen_three_element_0">Datenschutz</string>
+    <string name="onBoarding_screen_four_element_0">Benachrichtigungen</string>
+    <string name="onBoarding_screen_four_element_1">Wir würden dich gerne über die Dinge, die in
+        unserer Stadt passieren, auf dem Laufenden halten. Dafür werden wir dich im Verlauf nach
+        deinem Einverständnis fragen.
+    </string>
+    <string name="onBoarding_screen_five_element_0">Standort</string>
+    <string name="onBoarding_screen_five_element_1">Um dir Informationen zu deinem aktuellen Standort
+        zu zeigen, benötigen wir deine Zustimmung. Keine Sorge, dein Standort wird nicht von uns
+        gespeichert.
+    </string>
+    <string name="onBoarding_screen_six_element_0">Es kann losgehen</string>
+    <string name="onBoarding_screen_six_element_1">Vielen Dank, dass du dir die Zeit genommen hast.</string>
+    <string name="onBoarding_screen_six_element_2">Hinterlasse uns gerne ein Feedback über das Kontaktformular, wie du unsere App findest und was du dir für die nächste Version wünschst.
+    </string>
+
+    <!-- ESSENTIALS RELATED STRINGS -->
+    <string name="global_share_via">Teilen über</string>
+    <string name="global_share_text">Gerade in der Mensch, Solingen App gefunden. Interessant für dich?</string>
+    <string name="global_back">Zurück</string>
+    <string name="global_search">Suche</string>
+    <string name="global_ok">OK</string>
+    <string name="global_success">Erfolg</string>
+    <string name="global_cancel">Abbrechen</string>
+    <string name="global_shared_with">Geteilt mit der %s App</string>
+    <string name="global_share">Teilen</string>
+    <string name="global_add_to_calendar">Zum Kalender hinzufügen</string>
+    <string name="global_yes">Ja</string>
+    <string name="global_no">Nein</string>
+    <string name="global_try_again">Erneut versuchen</string>
+    <string name="global_select_date">Datum auswählen</string>
+    <string name="global_select_time">Zeit auswählen</string>
+    <string name="global_today">Heute</string>
+    <string name="global_tomorrow">Morgen</string>
+    <string name="global_x_days_ago">Vor %d Tagen</string>
+    <string name="global_yesterday">Gestern</string>
+    <string name="global_webview_title"></string>
+    <string name="global_over_1_month_ago">Vor 30+ Tagen</string>
+    <string name="global_data_privacy">Datenschutz</string>
+    <string name="global_appointment_city">Termin vereinbaren</string>
+    <string name="global_no_data_at_moment">Zurzeit sind keine Daten verfügbar</string>
+    <string name="global_placeholder">PLACEHOLDER</string>
+    <string name="global_show_more">mehr anzeigen</string>
+    <string name="global_show_all">alle anzeigen</string>
+    <string name="global_show_less">weniger anzeigen</string>
+    <string name="global_error_dialog_title">Ups, da ist etwas schief gelaufen.</string>
+    <string name="global_try_later">Ups, da ist etwas schief gelaufen. Bitte versuchen Sie es noch
+        einmal. Wenn der Fehler weiterhin besteht, versuchen Sie es später noch einmal oder wenden
+        Sie sich an unseren Support-Service.
+    </string>
+    <string name="global_dismiss">Schließen</string>
+    <string name="global_loading">Lade Daten…</string>
+    <string name="global_contact">Kontakt</string>
+    <string name="global_close_button">schließen</string>
+    <string name="global_monday">"Montag: "</string>
+    <string name="global_tuesday">"Dienstag: "</string>
+    <string name="global_wednesday">"Mittwoch: "</string>
+    <string name="global_thursday">"Donnerstag: "</string>
+    <string name="global_friday">"Freitag: "</string>
+    <string name="global_saturday">"Samstag: "</string>
+    <string name="global_sunday">"Sonntag: "</string>
+    <string name="global_mail_subject">Frage</string>
+    <string name="global_mail_title">"Email: "</string>
+    <string name="global_website_title">"Webseite: "</string>
+    <string name="global_phone_title">"Telefon: "</string>
+    <string name="global_direction_north">Norden</string>
+    <string name="global_direction_northeast">Nordosten</string>
+    <string name="global_direction_east">Osten</string>
+    <string name="global_direction_southeast">Südosten</string>
+    <string name="global_direction_south">Süden</string>
+    <string name="global_direction_southwest">Südwesten</string>
+    <string name="global_direction_west">Westen</string>
+    <string name="global_direction_northwest">Nordwesten</string>
+    <string name="global_direction_unknown">---</string>
+    <string name="global_select_from_gallery">aus galerie wählen</string>
+    <string name="global_open_camera">kamera öffnen</string>
+    <string name="global_clear">löschen</string>
+    <string name="global_contact_mail">Deine E-Mail-Adresse</string>
+    <string name="global_contact_phone">Telefonnummer</string>
+    <string name="global_contact_name">Dein Name</string>
+    <string name="global_contact_message">Kommentar</string>
+    <string name="global_name_missing_hint">Bitte einen Namen angeben</string>
+    <string name="global_email_missing_hint">Bitte eine gültige Email Adresse angeben</string>
+    <string name="global_message_missing_hint">Bitte mindestens 5 Zeichen eingeben</string>
+    <string name="global_dataprivacy_missing_hint">Sie müssen den Datenschutzbestimmungen zustimmen</string>
+    <string name="global_phone_missing_hint">Bitte eine gültige Telefonnummer angeben</string>
+
+    <string name="global_open_hours">Öffnungszeiten</string>
+    <string name="global_description">Beschreibung</string>
+    <string name="global_route">Anfahrt</string>
+    <string name="global_show_route">Route Anzeigen</string>
+
+    <string name="global_send_button">Anfrage Senden</string>
+
+    <string name="global_no_result">Kein Ergebnis</string>
+    <string name="global_retry">erneut versuchen</string>
+    <string name="global_no_internet">Keine Internet Verbinding</string>
+
+    <!-- ERROR RELATED STRINGS -->
+    <string name="privacy_text">Datenschutzbestimmungen</string>
+    <string name="privacy_text_before">"Ich stimme den "</string>
+    <string name="privacy_text_clickable">Datenschutzbestimmungen</string>
+    <string name="privacy_text_after">" zu."</string>
+    <string name="essentials_measure_kilometer">km</string>
+    <string name="essentials_measure_meter">m</string>
+    <string name="essentials_dialog_title_confirm">Bitte bestätigen</string>
+    <string name="essentials_content_description_back_arrow">Zurück Pfeil</string>
+    <string name="essentials_content_description_share">Teilen Knopf</string>
+    <string name="essentials_value_date_time_today">Heute um %s Uhr</string>
+    <string name="essentials_value_date_time_tomorrow">Morgen um %s Uhr</string>
+    <string name="essentials_value_date_time">%s, um %s Uhr</string>
+    <string name="essentials_fetching_data">Daten werden geladen…</string>
+
+    <!-- WASTE RELATED STRINGS -->
+    <string name="waste_item_title">Abfall</string>
+    <string name="waste_title">Abfall</string>
+    <string name="waste_name_plastic">Gelbe Tonne</string>
+    <string name="waste_name_paper">Papier</string>
+    <string name="waste_name_bio">Bio Müll</string>
+    <string name="waste_name_residual">Restmüll</string>
+    <string name="waste_title_main">Abfall</string>
+    <string name="waste_title_appointments">Nächste Abholtermine</string>
+    <string name="waste_title_more_info">Weitere Informationen</string>
+    <string name="waste_title_notification_turn_on">Erinnerungen einschalten</string>
+    <string name="waste_openingHours">Öffnungszeiten</string>
+    <string name="waste_location_contact">Kontakt</string>
+    <string name="waste_location">Standort</string>
+    <string name="waste_show_route">Route anzeigen</string>
+    <string name="waste_addresses_title">Abfall Adressen</string>
+    <string name="waste_addresses_yourAddress">Ihre derzeitige Adresse</string>
+    <string name="waste_addresses_chooseYourAddress">Wählen Sie Ihre Adresse</string>
+    <string name="waste_addresses_chooseAddress">Adresse wählen…</string>
+    <string name="waste_notification_info">Durch die Aktivierung der Erinnerung werden die nächsten zwei
+        Abholtermine auf der Startseite angezeigt und Sie erhalten automatisch eine Push-Benachrichtigung
+        am Tag vor der nächsten Abholung. (Erfordert Neustart der App)
+    </string>
+
+    <string name="waste_overview_info">Die klassischen Haushaltsabfälle wie Restmüll, Biomüll, Papier und Verpackungen werden in den dafür vorgesehenen Behälter gesammelt und in regelmäßigen Abständen automatisch von uns abgeholt.
+Besonders sperrige Abfälle werden separat und nur auf Anfrage abgeholt. Einzige Ausnahme:
+Weihnachtsbäume. Die sammeln wir jedes Jahr nach dem 06.01. ein.</string>
+    <string name="waste_info_paper" translatable="false">In die blaue Papiertonne gehören Papier, Pappe, Kartons,
+        darunter Geschenkpapier, Zeitschriften und Kataloge. Nicht in die Papiertonne gehören Aktenordner,
+        Tetra-Paks und fettige Pizzakartons.</string>
+    <string name="waste_info_plastic" translatable="false">Die gelbe Tonne steht Ihnen für Verpackungen aus Aluminium,
+        Kuststoff, Metall und Verbundstoff zur Verfügung. Also für Verpackungen wie beispielsweise: Aluschalen, Joghurtbecher,
+        Konservendosen oder Milchtüten. Gebrauchsgegenstände aus Kunststoff, Metall und Verbundstoff gehören hingegen in die
+        Restabfalltonne</string>
+    <string name="waste_info_tree" translatable="false">Zu Beginn eines jeden neuen Jahres sind wir unterwegs,
+        um in Remscheid die ausgedienten Weihnachtsbäume einzusammeln und zu Holzhäcksel zu verarbeiten.</string>
+    <string name="waste_info_green" translatable="false"></string>
+    <string name="waste_info_special" translatable="false"></string>
+    <string name="waste_info_residual" translatable="false">Die Restmülltonne steht für den klassischen Restmüll zur
+        Verfügung, beispielsweise Hygieneartikel, Asche und Haushaltsgegenstände aus Plastik.</string>
+    <string name="waste_info_bio" translatable="false">In die Biotonne gehören alle organischen Küchenabfälle,
+        vor und nach dem Kochtopf, sowie Grünabfälle, zum Beispiel Speisereste, Topf- und Balkonpflanzen,
+        Teebeutel und Kaffefilter. Nicht in die Biotonne gehört Restmüll aller Art, zum Beispiel Windeln,
+        Katzenstreu sowie flüssige Speiseabfälle</string>
+    <string name="waste_info_rubbish" translatable="false">Die Abholung von sperrigen Abfällen, die wegen ihrer
+        Größe nicht in die Restmülltonne passen, erfolgt nach Antragstellung. Zum Sperrmüll gehören beispielsweise
+        bewegliches Möbiliar aus dem Haushalt, Kühlschränke, Gartenmöbel und große Spielzeuge.</string>
+    <string name="waste_info_glass" translatable="false"></string>
+    <string name="waste_info_led" translatable="false"></string>
+    <string name="waste_info_clothes" translatable="false"></string>
+    <string name="waste_info_electronics" translatable="false"></string>
+    <string name="waste_info_batteries" translatable="false"></string>
+
+    <string name="waste_info_old_clothes">Altkleidercontainer</string>
+    <string name="waste_info_green_mobile">Grünschnittcontainer</string>
+
+    <!-- WEATHER RELATED STRINGS -->
+    <string name="weather_feels_like">Gefühlt</string>
+    <string name="weather_uv">UV-Index</string>
+    <string name="weather_rain">Niederschlag</string>
+    <string name="weather_humidity">Luftfeuchte</string>
+    <string name="weather_pressure">Luftdruck</string>
+    <string name="weather_wind_speed">Geschwindigkeit</string>
+    <string name="weather_wind_direction">Richtung</string>
+
+    <!-- MAP RELATED STRINGS -->
+    <string name="map_title">Interessante Orte</string>
+    <string name="map_poi_details_approximate_distance">- Entfernung ca.</string>
+    <string name="map_categories">Kategorien</string>
+    <string name="map_search">suchen</string>
+
+    <!-- CONTACT RELATED STRINGS -->
+    <string name="contact_title">Kontakt</string>
+    <string name="contact_explain_text">Hast Du Hinweise oder Fragen zur App? Klappt damit irgendetwas
+        nicht oder hast Du sogar neue Ideen? Aber auch allgemeine Fragen, Beschwerden oder Hinweise
+        interessieren uns! Dann nutze doch einfach das folgende Kontaktformular und teile uns Dein
+        Anliegen mit! Wir melden uns dann bei Dir!
+    </string>
+    <string name="contact_mail">Deine E-Mail-Adresse</string>
+    <string name="contact_name">Dein Name</string>
+    <string name="contact_comment">Kommentar</string>
+    <string name="contact_failure_message">Senden Fehlgeschlagen</string>
+    <string name="contact_success_message">Erfolgreich gesendet</string>
+
+    <!-- CORONA RELATED STRINGS -->
+    <string name="corona_title">Corona</string>
+    <string name="corona_details_title">Corona Details</string>
+    <string name="corona_chart_date_value">Datum: %s, Wert: %s</string>
+    <string name="corona_more_information">Weitere Informationen</string>
+
+    <!-- COWORKING RELATED STRINGS -->
+    <string name="coworking_label_company">Firma</string>
+    <string name="coworking_label_full_name">Vor- und Nachname</string>
+    <string name="coworking_label_email">E-Mail-Adresse</string>
+    <string name="coworking_label_phone">Telefonnummer</string>
+    <string name="coworking_label_website">Website</string>
+    <string name="coworking_label_coworking_space">Coworkingspace auswählen</string>
+    <string name="coworking_label_message">Deine Nachricht</string>
+    <string name="coworking_mark_optional">(optional)</string>
+    <string name="coworking_header_your_data">Persönliche Daten</string>
+    <string name="coworking_header_your_space">Der Space</string>
+    <string name="coworking_header_your_message">Deine Nachricht</string>
+    <string name="coworking_form_success">Ihre Anfrage wurde erfolgreich gesendet.</string>
+    <string name="coworking_title">Coworking</string>
+    <string name="coworking_headerText">Coworking Platz</string>
+    <string name="coworking_description">Einen Coworking Platz bei Coworkit buchen</string>
+    <string name="coworking_alert_success_dialog_text">Deine Meldung ist bei uns eingegangen und wir
+        werden uns schnellstmöglich darum kümmern.
+    </string>
+    <string name="coworking_alert_success_dialog_title">Vielen Dank</string>
+    <string name="coworking_alert_failure_dialog_title">Fehler</string>
+    <string name="coworking_alert_failure_dialog_text">Deine Nachricht konnte leider nicht erfolgreich
+        gesendet werden.
+    </string>
+    <string name="coworking_alert_dialog_button_text">OK</string>
+    <string name="coworking_details">Coworkit bietet dir die Möglichkeit, einen Probetag in ihrem
+        Coworkingspace zu verbringen. Du erhältst eine kleine Einführung durch den Coworkingspace
+        und kannst all deine Fragen rund um das Thema Coworking stellen.
+    </string>
+
+    <!-- CULTURE RELATED STRINGS -->
+    <string name="culture_item_title">Kultur</string>
+    <string name="culture_title">Kultur und Bildung</string>
+
+    <!-- DEFECT RELATED STRINGS -->
+    <string name="defect_title">Mängel</string>
+    <string name="defect_header_photos">Fotos</string>
+    <string name="defect_header_location">Standort</string>
+    <string name="defect_header_defect">Mangel</string>
+    <string name="defect_personal_data">Ihre Daten</string>
+    <string name="defect_header_report_defect">Mangel Melden</string>
+    <string name="defect_sent_successfully">Mangel gesendet</string>
+    <string name="defect_failure">Mangel nicht gesendet</string>
+
+    <!-- EVENTS RELATED STRINGS -->
+    <string name="events_title">Veranstaltungen</string>
+    <string name="events_bookmarked_events_title">Veranstaltungen</string>
+    <string name="events_nearby">Veranstaltungen in Ihrer Nähe</string>
+    <string name="events_error_details">Es war nicht möglich, die Einzelheiten dieser Veranstaltung
+        zu überprüfen. Versuchen Sie es bitte später noch einmal. Wenn der Fehler weiterhin besteht,
+        wenden Sie sich bitte an unseren Support-Service.
+    </string>
+    <string name="events_not_found">Keine Veranstaltungen gefunden.</string>
+    <string name="events_bookmark">Merken</string>
+    <string name="events_calendar">Kalender</string>
+    <string name="events_not_found_today">Heute finden keine Veranstaltungen statt.</string>
+    <plurals name="events_found_today">
+        <item quantity="one">Heute gibt es eine Veranstaltung.</item>
+        <item quantity="other">Heute finden %d Veranstaltungen statt.</item>
+    </plurals>
+    <string name="events_time_description">Diese Veranstaltung findet statt am</string>
+    <string name="events_show_bookmark_description">Gespeicherte Veranstaltungen</string>
+    <string name="events_ticket_info">Ticketinfo</string>
+    <string name="events_location">Ort</string>
+    <string name="events_btn_show_route">Route Anzeigen</string>
+    <string name="events_full_day">" ganztags"</string>
+    <plurals name="events_found">
+        <item quantity="one">Eine Veranstaltung gefunden.</item>
+        <item quantity="other">%d Veranstaltungen gefunden.</item>
+    </plurals>
+
+    <!-- INVESTMENT RELATED STRINGS -->
+    <string name="investment_title">Investitionen</string>
+    <string name="investment_stock_title">Maßnahme</string>
+    <string name="investment_status_title">Status</string>
+    <string name="investment_amount_title">Investionsvolumen</string>
+    <string name="investment_options_title">Investitionsprojekte</string>
+    <string name="investment_address_title">Adresse</string>
+    <string name="investment_description_title">Beschreibung</string>
+    <string name="investment_ready_title">Fertig</string>
+    <string name="investment_moreInfo_title">Mehr Informationen</string>
+
+    <!-- JOB RELATED STRINGS -->
+    <string name="jobs_title">Stellenportal</string>
+    <string name="jobs_details_title">Details der Stelle</string>
+    <string name="jobs_company_logo_description">Firmenlogo</string>
+    <string name="jobs_full_time">Vollzeit</string>
+    <string name="jobs_part_time">Teilzeit</string>
+
+    <!-- PRESS RELEASES RELATED STRINGS -->
+    <string name="press_release_title">Pressemeldung</string>
+    <string name="press_release_read_title">Pressemeldung</string>
+    <string name="press_release_reading_time">%d min Lesezeit</string>
+    <string name="press_release_share">Teilen</string>
+    <string name="press_release_posted_at">veröffentlicht um</string>
+    <string name="press_release_dashboard_news">Meldungen</string>
+
+    <!-- PUBLIC_TRANSPORT RELATED STRINGS -->
+    <string name="public_transport_title">ÖPNV</string>
+    <string name="public_transport_route_details_title">Reiseplan</string>
+    <string name="public_transport_search_start">Start</string>
+    <string name="public_transport_search_stop">Ziel</string>
+    <string name="public_transport_showRoute">Route Anzeigen</string>
+    <string name="public_transport_tripTime">Fahrzeit: %s min</string>
+    <string name="public_transport_arrival">"Ankunft: "</string>
+    <string name="public_transport_departure">"Abfahrt: "</string>
+    <string name="public_transport_stopCount">" Haltestelle/n"</string>
+    <string name="public_transport_departure_now">jetzt</string>
+    <string name="public_transport_departure_in_x_minutes">in %s Minuten</string>
+
+    <!-- ART RELATED STRINGS -->
+    <string name="art_title">Walder Kunstprojekt</string>
+    <string name="art_enable_location">Du musst Bluetooth einschalten und deinen Standort freigeben
+        um diese Funktion nutzen zu können.
+    </string>
+    <string name="art_denied_permission">Da die Berechtigungen nicht erteilt wurden, müssen sie
+        in den App Einstellungen außerhalb der App freigegeben werden.
+    </string>
+    <string name="art_not_at_wald">Du befindest dich nicht in der Nähe des Walder Kunstprojekts</string>
+    <string name="art_welcome">Hier findest Du Informationen zu den Kunstprojekten rund um die
+        Friedrich-Ebert-Str. und dem Walder Kirchplatz. Weitere Infos findest Du hier:
+    </string>
+    <string name="art_details_artist_content_description">Beschreibung</string>
+    <string name="art_details_default_text">Details</string>
+    <string name="art_link">https://www.quartier-wald.de</string>
+    <string name="art_base_url">"https://geoportal.solingen.de/buergerservice1/ressourcen/kunstinwald/"</string>
+    <string name="art_websites">Webseiten</string>
+
+    <string name="mobility_name_publicTransport">ÖPNV</string>
+    <string name="mobility_name_carSharing">Car Sharing</string>
+    <string name="mobility_name_taxi">Taxi</string>
+    <string name="mobility_name_bus">Bus</string>
+    <string name="mobility_name_tram">S-Bahn</string>
+    <string name="mobility_name_scooter">E-Roller</string>
+    <string name="mobility_name_train">Zug</string>
+    <string name="mobility_name_bike">Fahrrad</string>
+    <string name="mobility_name_subway">U-Bahn</string>
+    <string name="mobility_name_bicycle">Fahrrad</string>
+
+    <string name="mobility_name_cablecar">Schwebebahn</string>
+    <string name="mobility_name_airplane">Flugzeug</string>
+    <string name="mobility_name_regiotrain">Regionalzug</string>
+    <string name="mobility_name_longdistancetrain">Fern-Zug</string>
+    <!-- POI -->
+    <string name="poi_more_text">karte öffnen</string>
+
+    <!-- District -->
+    <string name="district_title">Stadtteile</string>
+    <string name="dashboard_district_in_city">Stadtteile in </string>
+</resources>
