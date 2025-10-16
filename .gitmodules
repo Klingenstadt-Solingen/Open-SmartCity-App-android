@@ -1,62 +1,62 @@
 [submodule "oscacontact-android"]
 	path = oscacontact-android
-	url = ../modules/oscacontact-android.git
+	url = https://github.com/Klingenstadt-Solingen/Open-SmartCity-App-Contact-android
 	branch = develop
 [submodule "oscacoworking-android"]
 	path = oscacoworking-android
-	url = ../modules/oscacoworking-android.git
+	url = https://github.com/Klingenstadt-Solingen/Open-SmartCity-App-Coworking-android
 	branch = develop
 [submodule "oscadefect-android"]
 	path = oscadefect-android
-	url = ../modules/oscadefect-android.git
+	url = https://github.com/Klingenstadt-Solingen/Open-SmartCity-App-Defect-android
 	branch = develop
 [submodule "oscaessentials-android"]
 	path = oscaessentials-android
-	url = ../modules/oscaessentials-android.git
+	url = https://github.com/Klingenstadt-Solingen/Open-SmartCity-App-Essentials-android
 	branch = develop
 [submodule "oscaevents-android"]
 	path = oscaevents-android
-	url = ../modules/oscaevents-android.git
+	url = https://github.com/Klingenstadt-Solingen/Open-SmartCity-App-Events-android
 	branch = develop
 [submodule "oscajobs-android"]
 	path = oscajobs-android
-	url = ../modules/oscajobs-android.git
+	url = https://github.com/Klingenstadt-Solingen/Open-SmartCity-App-Jobs-android
 	branch = develop
 [submodule "oscamap-android"]
 	path = oscamap-android
-	url = ../modules/oscamap-android.git
+	url = https://github.com/Klingenstadt-Solingen/Open-SmartCity-App-Map-android
 	branch = develop
 [submodule "oscamobilitymonitor-android"]
 	path = oscamobilitymonitor-android
-	url = ../modules/oscamobilitymonitor-android.git
+	url = https://github.com/Klingenstadt-Solingen/Open-SmartCity-App-MobilityMonitor-android
 	branch = develop
 [submodule "oscanetworkservice-android"]
 	path = oscanetworkservice-android
-	url = ../modules/oscanetworkservice-android.git
+	url = https://github.com/Klingenstadt-Solingen/Open-SmartCity-App-NetworkService-android
 	branch = develop
 [submodule "oscapressreleases-android"]
 	path = oscapressreleases-android
-	url = ../modules/oscapressreleases-android.git
+	url = https://github.com/Klingenstadt-Solingen/Open-SmartCity-App-PressReleases-android
 	branch = develop
 [submodule "oscapublictransport-android"]
 	path = oscapublictransport-android
-	url = ../modules/oscapublictransport-android.git
+	url = https://github.com/Klingenstadt-Solingen/Open-SmartCity-App-PublicTransport-android
 	branch = develop
 [submodule "oscasgart-android"]
 	path = oscasgart-android
-	url = ../modules/oscasgart-android.git
+	url = https://github.com/Klingenstadt-Solingen/Open-SmartCity-App-SGArt-android
 	branch = develop
 [submodule "oscawaste-android"]
 	path = oscawaste-android
-	url = ../modules/oscawaste-android.git
+	url = https://github.com/Klingenstadt-Solingen/Open-SmartCity-App-Waste-android
 	branch = develop
 [submodule "oscaweather-android"]
 	path = oscaweather-android
-	url = ../modules/oscaweather-android.git
+	url = https://github.com/Klingenstadt-Solingen/Open-SmartCity-App-Weather-android
 	branch = develop
 [submodule "oscaenvironment-android"]
 	path = oscaenvironment-android
-	url = ../modules/oscaenvironment-android.git
+	url = https://github.com/Klingenstadt-Solingen/Open-SmartCity-App-Environment-android
 [submodule "oscadistrict-android"]
 	path = oscadistrict-android
-	url = ../modules/oscadistrict-android.git
+	url = https://github.com/Klingenstadt-Solingen/Open-SmartCity-App-District-android
